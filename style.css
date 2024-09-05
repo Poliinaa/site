@@ -1,0 +1,163 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #00aaff;
+}
+
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #111, #333);
+    position: relative;
+}
+
+.intro-text {
+    text-align: center;
+}
+
+.intro-text h1 {
+    font-size: 3rem;
+}
+
+.intro-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.cta-button:hover {
+    background-color: #0088cc;
+}
+
+.robot-image {
+    width: 400px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Секцию О нас */
+.about-section {
+    background-color: #222;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-image {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* Курсы */
+.courses-section {
+    background-color: #1f1f1f;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.course-card {
+    background-color: #333;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 300px;
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+}
+
+.course-card p {
+    font-size: 1rem;
+}
+
+/* Галерея */
+.gallery-section {
+    background-color: #111;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin: 10px;
+}
+
+.gallery-item img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Контакты */
+.contacts-section {
+    background-color: #222;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-links li a {
+    color: #00aaff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
